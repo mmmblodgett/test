@@ -1,0 +1,131 @@
+/*******************
+ * Problem Set 5   *
+ * CS50, Fall 2018 *
+ *******************/
+body {
+    background-color: #A51C30;
+    color: white;
+    text-align: center;
+    font-family: calibri, sans-serif;
+    overflow-y: scroll;
+}
+
+fixed {
+    position: fixed;
+    background-color: #A51C30;
+    border-bottom: solid 3px #EC9A29;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+header {
+    font-size:4vw;
+    font-weight: bold;
+}
+
+subheader {
+    font-size: 1.5vw;
+}
+
+.spacer {
+    font-size: 1.5vw;
+}
+
+mainheader {
+    font-weight: bold;
+    color: #EC9A29;
+    margin: auto;
+}
+
+mainheader::before {
+    display: block;
+    content: "\A";
+}
+
+footer {
+    font-size: 1.2vw;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
+
+.content {
+    width: 50vw;
+    font-size: 1.4vw;
+    margin: auto;
+}
+img {
+    max-width: 30vw;
+    height: auto;
+    width: auto; /* ie8 */
+}
+@media screen and (max-width: 900px) {
+    .content {
+        width: 80vw;
+        font-size: 2.4vw;
+    }
+    header {
+        font-size: 8vw;
+    }
+    subheader {
+        font-size: 3vw;
+    }
+    .spacer {
+        font-size: 3vw;
+    }
+    footer {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        font-size: 8vw;
+    }
+    subheader {
+        font-size: 3vw;
+    }
+    .content {
+        width: 90vw;
+        font-size: 4vw;
+    }
+    .spacer {
+        font-size: 4vw;
+    }
+    footer {
+        font-size: 3vw;
+    }
+    collapse {
+        color: #A51C30;
+        /* Collapse the original line */
+    }
+    collapse::after {
+        display: block;
+        content: "\A";
+    }
+}
+
+th, td {
+    padding: 0.5vw;
+    text-align: left;
+}
+
+  .centertable {
+    margin: 0 auto;
+    border: 3px solid #EC9A29;
+  }
+
+#right {
+    text-align: right;
+}
